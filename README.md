@@ -1,12 +1,13 @@
 # autotuning
 Swift-Configuration is a description of the configuration options for swift
+
 # <div align = "center">A description of the configuration options for swift</div>
 
 ###  <div align = "center">Table 1: Description of the 27 Flink configuration parameters</div>
 
-| **Configuration Parameters—Description**                   | <font size=1>Abbr.</font> | <font size=1>Range </font>    | Default              		|
+| **Configuration Parameters—Description**                   | Abbr.| Range   | Default              		|
 | :----------------------------------------------------------- | ----- | --------------- | -------------------- |
-| **parallelism.default**-The default parallelism to use for programs that have no parallelism specifified. | PLDT  | 1-12            | 1                    |
+| **parallelism.default**-The default parallelism to use for programs that have no parallelism specifified.| PLDT  | 1-12            | 1                    |
 | **jobmanager.heap.mb** - JVM heap size (in megabytes) for the JobManager. | JMHP  | 1024-6144       | 1024                 |
 | **taskmanager.heap.mb** - JVM heap size (in megabytes) for the TaskManager. | TMHP  | 2048-6144       | 1024                 |
 | **taskmanager.memory.off-heap** - the task manager allocates memory which is used for sorting, hash tables, and caching of intermediate results outside of the JVM heap. | TMOH  | false, true     | false                |
@@ -38,8 +39,8 @@ Swift-Configuration is a description of the configuration options for swift
 
 ###   <div align = "center">Table 2: Description of the 34 Spark configuration parameters</div>                              
 
-| **Confifiguration Parameters—Description**                   | <div style="width:50px">Range</div>           | Default |
-| ------------------------------------------------------------ | --------------- | ------- |
+| **Confifiguration Parameters—Description**                   | Range         | Default |
+| :------------------------------------------------------------ | ------------------------| ------- |
 | **spark.reducer.maxSizeInFlight**—Maximum size of map outputs to fetch simultaneously from each reduce task, in MB. | 2–128           | 48      |
 | **spark.shufflfle.fifile.buffer**—Size of the in-memory buffer for each shufflfle fifile output stream, in KB. | 2–128           | 32      |
 | **spark.shufflfle.sort.bypassMergeThreshold**—Avoid merge-sorting data if there is no map-side aggregation. | 100–1000        | 200     |
